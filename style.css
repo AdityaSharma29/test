@@ -84,6 +84,10 @@ body{ background-color: #00587A; }
     .show-overlay{
         width:100%;
     }
+    #home-post-cnt{
+        padding: 40px 20px 40px 20px;
+    }
+
 }
 
 
@@ -141,8 +145,16 @@ body{ background-color: #00587A; }
 
 #home-post-cnt{
     padding: 50px;
-
 }
+
+@media (max-device-width:600px){
+
+    #home-post-cnt{
+        padding: 40px 20px 40px 20px;
+    }
+    
+}
+
 .sub-post-cnt{
     padding: 5px;
     border: 2px solid #0F3057;
