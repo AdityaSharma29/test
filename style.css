@@ -77,9 +77,11 @@ body{ background-color: #00587A; }
     list-style-type: none;
 }
 
-@media (max-width:600px){
+@media (max-device-width:600px){
 
-    .show-overlay{width:100%;}
+    .show-overlay{
+        width:100%;
+    }
 }
 
 
