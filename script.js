@@ -19,7 +19,7 @@ function showOverlay(){
     ele.classList.add('show-overlay');
 }
 
-
+/*
 
 // ------------------- SEARCH ENGINE ------------------------
 
@@ -84,3 +84,5 @@ function display_home_data(){
     
 }
 
+
+*/
