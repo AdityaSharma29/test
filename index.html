@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .liked{
+                color: red;
+            }
+        </style>
+        <title>Humsafar</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Varela+Round&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Secular+One&family=Texturina:wght@200&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body onload="display_post_data()">
+
+
+        <!--  DO NOT TOUCH ... COPY FOR ALL ... ONLY CHANGE LINKS   -->
+        
+
+        <div id="overlay-cnt">
+            <div id="close-btn-cnt"><i id="close-btn" class="fas fa-times"></i></div>
+            <br><br>
+            <li class="overlay-lnks" >WELCOME !!</li>
+            <div id="sub-overlay-cnt">
+                <div class="overlay-lnks-cnt">
+                    <a href="/profile"><li class="overlay-lnks">Profile</li></a>
+                    <br>
+                    <a href="/posts"><li class="overlay-lnks">Your Posts</li></a>
+                    <br>
+                    <a href="/about-us"><li class="overlay-lnks">About Us</li></a>
+                    <br>
+                    <a href="/contact-us"><li class="overlay-lnks">Contact Us</li></a>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!--  DO NOT TOUCH.... COPY FOR ALL  -->
+        
+
+        <div class="header-cnt">
+            <div class="overlay-btn-cnt"><i id="show-overlay-btn" class="fas fa-outdent"></i></div>
+            <div class="search-engine-cnt">
+                <input id="search_input" autocomplete="home" onfocus="search_engine()" type="search" placeholder="Search place ...">
+                <div id="result-cnt">
+                    <div id="geo-data"></div>
+                </div>
+            </div>
+            <div class="compose-btn-cnt"><a href="/compose"><i id="write-post-btn" class="fas fa-user-edit"></i></a></div>
+        </div>
+        <hr>
+
+
+<!-- ####################################################################################### -->
+
+<!--                    D A T A                 SECTION                                      -->
+
+<!--                    THIS     SECTION     IS      COMPLETED                               -->
+
+
+        <br>
+        <h1 id="title" style="text-align: center;font-family: 'Satisfy', cursive;">Kishkindha</h1>
+        <div id="outer-post-cnt">
+
+            <!------------------------------------------------------------>
+
+            <div class="inner-post-cnt">
+
+                <div class="inner-post-map" id="googleMap"></div>         <!--  G-MAP   -->
+
+                <div class="inner-post-text">
+                    <h2>How I Reached There ?</h2><br>
+                    <h3>Things to remember...</h3><br>
+                    <p id="HIRT">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is availableIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is availableIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is availableIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is availableIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is availableIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is availableIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is availableIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is availableIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is availableIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available</p>
+                </div>
+                
+            </div>
+            
+            <!------------------------------------------------------------>
+
+            <div id="inner-img-cnt"></div>
+
+            <!------------------------------------------------------------>
+
+            <div class="inner-post-text-2">
+                <h1 style="font-family: 'Open Sans Condensed', sans-serif;">Answer Yourself</h1><br>
+                <div id="additional">
+                    <h3>heading</h3>
+                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is availableIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available</p><br>
+                    <h3>heading</h3>
+                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is availableIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available</p><br>
+                    <h3>heading</h3>
+                    <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is availableIn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available</p><br>
+
+                </div>
+            </div>
+            <br>
+
+            <!------------------------------------------------------------>
+
+            <p>Author :- <i id="author" style="text-align:inherit ;font-family: 'Satisfy', cursive;">testuser</i></p>
+
+            <br><br>
+
+            <div id="button-cnt">
+                <div id="" style="display: inline-flex;">
+                    <i class="fas fa-eye"></i><p>1234</p>
+                </div>
+                <div id="sub-button-cnt">
+                    <div id="">
+                        <button title="like" style="background-color: green;" id="like-btn"><i class="fas fa-thumbs-up"></i></button>
+                    </div>
+                    <div id="">
+                        <button title="report this post" style="background-color: red;" id="report-btn" ><i class="fas fa-flag"></i></button>
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+        
+
+        <hr>
+
+
+<!-- ############################################################################################# -->
+
+<!--                    C O M M E N T                 SECTION                                      -->
+
+<!--                       add an option to "like this post"                         -->
+
+
+        <div id="comment-section-cnt">
+
+            <div id="add-comment">
+                <img style="height: 30px;" src="abbey falls.jpg" alt="">
+                <input style="flex-grow: 5;" id="cmmnt_inpt" type="text">
+                <button style="flex-grow: 1;" onclick="add_comment()">Add Comment</button>
+            </div>
+
+            <br><br><br>
+
+            <div id="show-comment">
+
+
+                <div class="inner_cmmnt_cnt">
+                    <p><strong>@testuser</strong> lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                    <p style="visibility: hidden;height: 0;" class="comment_id">Hid</p>                    
+                    <button onclick="like_comment(this.previousElementSibling.innerHTML)"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button><button onclick="reply_to_comment(this.previousElementSibling, this.nextElementSibling.innerHTML)"><i class="fa fa-reply" aria-hidden="true"></i></button>
+                    <p style="visibility: hidden;height: 0;" class="comment_username">Husername</p>                    
+                    <div class="reply-section">
+                        <div>
+                            <p><strong>@testuser</strong> to <strong>@testuser</strong> loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum</p>
+                            <p style="visibility: hidden;height: 0;" class="comment_id">${cmmnt.comm_id}</p>
+                            <button onclick="reply_to_comment(this, this.nextElementSibling.innerHTML)"><i class="fa fa-reply" aria-hidden="true"></i></button>
+                            <p style="visibility: hidden;height: 0;" class="replying_author">${element.replier_username}</p>
+                        </div>
+                        <div>
+                            <p><strong>@testuser</strong> to <strong>@testuser</strong> loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum</p>
+                            <p style="visibility: hidden;height: 0;" class="comment_id">${cmmnt.comm_id}</p>
+                            <button onclick="reply_to_comment(this, this.nextElementSibling.innerHTML)"><i class="fa fa-reply" aria-hidden="true"></i></button>
+                            <p style="visibility: hidden;height: 0;" class="replying_author">${element.replier_username}</p>
+                        </div>
+                        <div>
+                            <p><strong>@testuser</strong> to <strong>@testuser</strong> loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum</p>
+                            <p style="visibility: hidden;height: 0;" class="comment_id">${cmmnt.comm_id}</p>
+                            <button onclick="reply_to_comment(this, this.nextElementSibling.innerHTML)"><i class="fa fa-reply" aria-hidden="true"></i></button>
+                            <p style="visibility: hidden;height: 0;" class="replying_author">${element.replier_username}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner_cmmnt_cnt">
+                    <p><strong>@testuser</strong> lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                    <p style="visibility: hidden;height: 0;" class="comment_id">Hid</p>                    
+                    <button onclick="like_comment(this.previousElementSibling.innerHTML)"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button><button onclick="reply_to_comment(this.previousElementSibling, this.nextElementSibling.innerHTML)"><i class="fa fa-reply" aria-hidden="true"></i></button>
+                    <p style="visibility: hidden;height: 0;" class="comment_username">Husername</p>                    
+                    <div class="reply-section">
+                        <div>
+                            <p><strong>@testuser</strong> to <strong>@testuser</strong> loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum</p>
+                            <p style="visibility: hidden;height: 0;" class="comment_id">${cmmnt.comm_id}</p>
+                            <button onclick="reply_to_comment(this, this.nextElementSibling.innerHTML)"><i class="fa fa-reply" aria-hidden="true"></i></button>
+                            <p style="visibility: hidden;height: 0;" class="replying_author">${element.replier_username}</p>
+                        </div>
+                        <div>
+                            <p><strong>@testuser</strong> to <strong>@testuser</strong> loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum</p>
+                            <p style="visibility: hidden;height: 0;" class="comment_id">${cmmnt.comm_id}</p>
+                            <button onclick="reply_to_comment(this, this.nextElementSibling.innerHTML)"><i class="fa fa-reply" aria-hidden="true"></i></button>
+                            <p style="visibility: hidden;height: 0;" class="replying_author">${element.replier_username}</p>
+                        </div>
+                        <div>
+                            <p><strong>@testuser</strong> to <strong>@testuser</strong> loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum</p>
+                            <p style="visibility: hidden;height: 0;" class="comment_id">${cmmnt.comm_id}</p>
+                            <button onclick="reply_to_comment(this, this.nextElementSibling.innerHTML)"><i class="fa fa-reply" aria-hidden="true"></i></button>
+                            <p style="visibility: hidden;height: 0;" class="replying_author">${element.replier_username}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner_cmmnt_cnt">
+                    <p><strong>@testuser</strong> lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                    <p style="visibility: hidden;height: 0;" class="comment_id">Hid</p>                    
+                    <button onclick="like_comment(this.previousElementSibling.innerHTML)"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button><button onclick="reply_to_comment(this.previousElementSibling, this.nextElementSibling.innerHTML)"><i class="fa fa-reply" aria-hidden="true"></i></button>
+                    <p style="visibility: hidden;height: 0;" class="comment_username">Husername</p>                    
+                    <div class="reply-section">
+                        <div>
+                            <p><strong>@testuser</strong> to <strong>@testuser</strong> loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum</p>
+                            <p style="visibility: hidden;height: 0;" class="comment_id">${cmmnt.comm_id}</p>
+                            <button onclick="reply_to_comment(this, this.nextElementSibling.innerHTML)"><i class="fa fa-reply" aria-hidden="true"></i></button>
+                            <p style="visibility: hidden;height: 0;" class="replying_author">${element.replier_username}</p>
+                        </div>
+                        <div>
+                            <p><strong>@testuser</strong> to <strong>@testuser</strong> loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum</p>
+                            <p style="visibility: hidden;height: 0;" class="comment_id">${cmmnt.comm_id}</p>
+                            <button onclick="reply_to_comment(this, this.nextElementSibling.innerHTML)"><i class="fa fa-reply" aria-hidden="true"></i></button>
+                            <p style="visibility: hidden;height: 0;" class="replying_author">${element.replier_username}</p>
+                        </div>
+                        <div>
+                            <p><strong>@testuser</strong> to <strong>@testuser</strong> loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum</p>
+                            <p style="visibility: hidden;height: 0;" class="comment_id">${cmmnt.comm_id}</p>
+                            <button onclick="reply_to_comment(this, this.nextElementSibling.innerHTML)"><i class="fa fa-reply" aria-hidden="true"></i></button>
+                            <p style="visibility: hidden;height: 0;" class="replying_author">${element.replier_username}</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div><input id="reply_inpt" type="text" required disabled><button id="submit_reply" disabled>Submit</button></div>                      
+
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaP0cvhqJUuk8spFCLewsypFLny31OYZs&callback=myMap"></script>
+        <script src="https://kit.fontawesome.com/12affb393a.js" crossorigin="anonymous"></script>
+    </body>
+</html>
